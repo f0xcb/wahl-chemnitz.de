@@ -1,0 +1,243 @@
+/* navigator css */
+
+body {
+    color: #005284;
+}
+
+.navigator {
+    display: none;
+    text-align: center;
+    padding: 1.5em;
+}
+.navigator.open {
+    display: block;
+}
+
+.navigator ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navigator a {
+    color: #005284;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0.75em;
+}
+.navigator a:hover {
+    background: rgba(44, 44, 84, 0.1);
+}
+
+.toggle-navigator {
+    color: white;
+    background-color: #005284;
+    border: none;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 1em auto;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .navigator a {
+        color: #005284;
+        background-color: white;
+        display: inline;
+    }
+    .navigator a:hover {background: #a5c6d5;}
+    .navigator ul li {display: inline;}
+    .navigator {display: block;}
+    .toggle-navigator {display: none;}
+}
+
+/* cards */
+.card {
+    margin: 3vw;
+    padding: 1em;
+    text-align: left;
+    border-radius: 0.5em;
+    background-color: rgb(0, 82, 132);
+}
+
+.card b {color: #FBE321;}
+
+.card i {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #FBE321;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card-headline {
+    color: #FBE321;
+    font-size: 2em;
+}
+
+.card-text {
+    color: #FBE321;
+    font-size: 1em;
+    margin-bottom: 0.3em;
+}
+
+.card-footer {
+    color: #FBE321;
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+.card img {
+    max-height: 10em;
+    max-height: 6em;
+    margin: 1em auto 1em;
+    display: block;
+}
+
+.card-center {text-align: center;}
+.card-justify {text-align: justify;}
+
+@media (min-width: 600px) {
+    .card {text-align: justify;}
+}
+
+.card-bottom-aeroblue {border-bottom: 0.2em solid #c6f1e7;}
+.card-bottom-jazzberryjam {border-bottom: 0.2em solid #a40e4c;}
+.card-bottom-spacecadet {border-bottom: 0.2em solid #2c2c54;}
+.card-bottom-cambridgeblue {border-bottom: 0.2em solid #acc3a6;}
+.card-bottom-sandybrown {border-bottom: 0.2em solid #f49d6e;}
+
+/*
+.card-user-edit {
+    background-color: #f49d6e;
+    color: #2c2c54;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0.8em auto;
+    display: block;
+    width: 10em;
+}
+
+.card-user-delete {
+    background-color: #a40e4c;
+    color: #2c2c54;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0.8em auto;
+    display: block;
+    width: 10em;
+}
+*/
+
+/* footer css */
+.footer {
+    padding: 2vh 2vh;
+    background-color: rgb(0, 82, 132);
+    color: grey;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #FBE321;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgba(251, 227, 33, 0.7);
+}
+
+/* shape css */
+.header h1 {
+    font-size: 4vw;
+    letter-spacing: 0.3em;
+    color: #FBE321;
+    text-transform: uppercase;
+}
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(0, 82, 132, 1) 0%, rgba(0, 82, 132, 1) 100%);
+    color: white;
+}
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+/* Animation */
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
