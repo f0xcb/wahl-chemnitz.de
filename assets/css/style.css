@@ -1,9 +1,37 @@
-/* navigator css */
-
 body {
     color: #005284;
 }
 
+/* badge css */
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+/* navigator css */
 .navigator {
     display: none;
     text-align: center;
@@ -240,4 +268,18 @@ body {
     h1 {
         font-size: 24px;
     }
+}
+
+/* images css */
+.responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
