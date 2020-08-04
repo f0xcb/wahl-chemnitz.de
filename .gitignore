@@ -1,5 +1,21 @@
-
-
+assets/plugins/alertify/css/themes/bootstrap.css
+assets/plugins/alertify/css/themes/bootstrap.min.css
+assets/plugins/alertify/css/themes/bootstrap.rtl.css
+assets/plugins/alertify/css/themes/bootstrap.rtl.min.css
+assets/plugins/alertify/css/themes/default.css
+assets/plugins/alertify/css/themes/default.min.css
+assets/plugins/alertify/css/themes/default.rtl.css
+assets/plugins/alertify/css/themes/default.rtl.min.css
+assets/plugins/alertify/css/themes/semantic.css
+assets/plugins/alertify/css/themes/semantic.min.css
+assets/plugins/alertify/css/themes/semantic.rtl.css
+assets/plugins/alertify/css/themes/semantic.rtl.min.css
+assets/plugins/alertify/js/alertify.js
+assets/plugins/alertify/js/alertify.min.js
+assets/plugins/alertify/css/alertify.css
+assets/plugins/alertify/css/alertify.min.css
+assets/plugins/alertify/css/alertify.rtl.css
+assets/plugins/alertify/css/alertify.rtl.min.css
 
 # Created by https://www.toptal.com/developers/gitignore/api/phpstorm+all,jetbrains+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm+all,jetbrains+all
