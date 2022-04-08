@@ -1,25 +1,19 @@
+<?php include __DIR__ . "/../../src/config/variables.php" ?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Videos | Chemnitz Nazifrei</title>
+    <title>Videos | planlos-wahl</title>
 
-    <link rel="stylesheet" href="../assets/css/simple-grid.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <?php include TEMPLATE_DIR . "/base/styles.html.php" ?>
 
 </head>
 <body>
 
-<button class="toggle-navigator" id="toggle-navigator">menü</button>
-<nav class="navigator" id="navigator">
-    <ul>
-        <li><a href="https://f0xcb.github.io/wahl-chemnitz.de/">Startseite</a></li>
-        <li><a href="https://f0xcb.github.io/wahl-chemnitz.de/candidates/">Kandidat*innen</a></li>
-        <li><a href="https://f0xcb.github.io/wahl-chemnitz.de/videos/">Videos</a></li>
-    </ul>
-</nav>
+<?php include TEMPLATE_DIR . "/base/navigation.html.php" ?>
 
 <div class="header">
     <div class="inner-header flex">
@@ -32,35 +26,35 @@
 
         <div class="col-6">
             <video width="320" height="240" class="center-video" controls>
-                <source src="./files/mov_bbb.mp4" type="video/mp4">
+                <source src="files/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <div class="col-6">
             <video width="320" height="240" class="center-video" controls>
-                <source src="./files/mov_bbb.mp4" type="video/mp4">
+                <source src="files/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <div class="col-6">
             <video width="320" height="240" class="center-video" controls>
-                <source src="./files/mov_bbb.mp4" type="video/mp4">
+                <source src="files/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <div class="col-6">
             <video width="320" height="240" class="center-video" controls>
-                <source src="./files/mov_bbb.mp4" type="video/mp4">
+                <source src="files/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </div>
 </div>
 
-<script src="../assets/js/navbar.js"></script>
+<?php include TEMPLATE_DIR . "/base/footer.html.php" ?>
 
 </body>
 </html>

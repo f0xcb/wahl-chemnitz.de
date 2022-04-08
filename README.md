@@ -1,5 +1,5 @@
-# wahl-chemnitz.de
+# wahl-uebersicht
 
-**The official list of candidates:** http://gleft.de/3YN
+- template für die vorstellung der kandidat:innen einer wahl
 
-`2020 © vrmzw`
+`(c) planlos-chemnitz`
